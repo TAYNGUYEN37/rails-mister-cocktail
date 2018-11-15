@@ -3,3 +3,24 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+.cocktail_list {
+  text-align: center;
+}
+.cocktails {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: lightgreen;
+}
