@@ -17,7 +17,7 @@
 
 <div class="cocktail_list">
   <h3>List of all Cocktails</h3>
-    <ul>
+    <ul class = "card_bottom">
       <% @cocktails.each do |cocktail| %>
       <li>
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cocktails/cocktail_1.jpg' %>');">
@@ -30,7 +30,7 @@
       </li>
     </ul>
   <%end%>
-<%= link_to "Add new cocktail", new_cocktail_path, { class: "btn btn-primary"}%>
+<%= link_to "Add new cocktail", new_cocktail_path, { class: "button"}%>
 </div>
 
 

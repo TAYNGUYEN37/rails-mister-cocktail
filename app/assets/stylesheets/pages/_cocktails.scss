@@ -5,13 +5,22 @@
 
 }
 
+body {
+  background-color: #FFF4E9;
+  padding-bottom: 50px;
+}
+
 .btn-primary {
   border-radius: 10px;
 }
 
 h1 {
   font-size: 120px;
-  color:white;
+  color:#FCB5B5;
+}
+
+h2 {
+  color: #8FC0A9;
 }
 
 #bootstrap-overrides #top {
@@ -28,4 +37,24 @@ h1 {
   align-items: center;
   margin-top: 140px;
   margin-left: 150px;
+ }
+
+ .show {
+  margin-top: 140px;
+  margin-left: 150px;
+
+ }
+
+ .button {
+  background-color:#2C272D;
+  border-radius: 3px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+ }
+
+ .card_bottom {
+  padding-top: 40px;
+  padding-bottom: 60px;
  }
