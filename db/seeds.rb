@@ -5,12 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "clearing DB"
+Dose.delete_all
+Ingredient.delete_all
+Cocktail.delete_all
+
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
-Cocktail.create(name: "")
-Cocktail.create(name: "whatever")
 
+puts "finished"
 
 
 # require 'open-uri'
