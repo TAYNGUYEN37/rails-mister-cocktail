@@ -1,13 +1,32 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "top">
+  <a class="navbar-brand" href="#">Mister Cocktail</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home  <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#"><%= link_to "Add new cocktail", new_cocktail_path %></a>
+    </div>
+  </div>
+</nav>
+
 <div class="home-banner">
-  <h1>Wagon Cocktails</h1>
+   <h1><span id="banner-typed-text">Mister Cocktail</span></h1>
 </div>
+
 
 <div class="cocktail_list">
   <h3>List of all Cocktails</h3>
-    <% @cocktails.each do |cocktail| %>
     <ul>
+      <% @cocktails.each do |cocktail| %>
       <li>
-    <%= link_to cocktail.name, cocktail_path(cocktail), { class: "cocktails" }%>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cocktails/cocktail_1.jpg' %>');">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2><%= link_to cocktail.name, cocktail_path(cocktail), { class: "cname" }%></h2>
+            </div>
+            <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+          </div>
       </li>
     </ul>
   <%end%>

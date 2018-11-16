@@ -11,6 +11,8 @@ Ingredient.create(name: "mint leaves")
 Cocktail.create(name: "")
 Cocktail.create(name: "whatever")
 
+
+
 # require 'open-uri'
 # url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
 # serialized = JSON.parse(open(url).read)
