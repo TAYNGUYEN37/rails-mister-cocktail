@@ -11,6 +11,7 @@
 
 h1 {
   font-size: 120px;
+  color:white;
 }
 
 #bootstrap-overrides #top {
@@ -20,4 +21,11 @@ h1 {
 
  .cname {
   color:white;
+ }
+
+ .form {
+  display:flex;
+  align-items: center;
+  margin-top: 140px;
+  margin-left: 150px;
  }

@@ -2,8 +2,8 @@ import Typed from 'typed.js';
 
 function loadDynamicBannerText() {
   new Typed('#banner-typed-text', {
-    strings: ["Cocktail"],
-    typeSpeed: 1,
+    strings: ["MISTER COCKTAIL"],
+    typeSpeed: 100
   });
 }
 
