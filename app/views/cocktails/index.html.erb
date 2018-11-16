@@ -17,9 +17,9 @@
 
 <div class="cocktail_list">
   <h3>List of all Cocktails</h3>
-    <ul class = "card_bottom">
       <% @cocktails.each do |cocktail| %>
-      <li>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo, height: 300, width: 270, crop: :fill %>');">
             <div class="card-category">Popular</div>
             <div class="card-description">
@@ -27,8 +27,8 @@
             </div>
             <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
           </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   <%end%>
 <%= link_to "Add new cocktail", new_cocktail_path, { class: "button"}%>
 </div>
