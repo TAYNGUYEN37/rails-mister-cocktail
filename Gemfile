@@ -8,6 +8,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 
+gem 'rest-client', '>= 2.0'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
